@@ -11,7 +11,9 @@ header .contenedor {
 header ul {
   display: flex;
 }
-
+a{
+  text-decoration: none;
+}
 header ul li {
   list-style: none;
   margin-right: 15px;
@@ -21,12 +23,10 @@ header ul li {
   max-width: 1280px;
   width: 90%;
   margin: auto;
-  display: flow-root;
 }
 
 header {
-  /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(249, 250, 250, 0.1)), url(../img/thinkiin.png); */
-  background: url(../img/jujjj.jpg);
+  background: linear-gradient(rgba(255,255,255,02), rgba()) url(../img/thinkinn.jpg);
   height: 100vh;
   background-size: cover;
 }
@@ -66,7 +66,7 @@ nav ul li a {
 
 
 
-/* SECCION DE SOBRE MI */
+/* Tema */
 
 h3 {
   text-align: center;
@@ -80,12 +80,12 @@ h3 {
 #tema .contenedor span{
   color: #fff;
 }
-#tema .contenedor-sobremi {
+#tema .contenedor-tema {
   display: flex;
   justify-content: space-around;
   color: #fff;
 }
-#tema .contenedor-sobremi h2{
+#tema .contenedor-tema h2{
   color: #fff; 
   text-align: center;
 }
@@ -112,11 +112,13 @@ h3 {
   padding: 34px 30px 38px 30px;
   border-radius: 20px;
   margin-bottom: 40px;
+  font-size: 16px;
   position: relative;
 }
 .servicio .expous , h4{
   width: 100%;
   border-radius: 10%;
+  font-size: 0px;
   text-align: center;
 }
 .ondas{
@@ -125,12 +127,12 @@ h3 {
   bottom: 0;
 }
 .servicio h4{
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
 }
 .servicio h4 span{
-  font-size: 16px;
-  color: #71bcfa;
+  font-size: 12px;
+  color: #1179f0;
 }
 
 .servicio p {
@@ -165,6 +167,7 @@ span {
 }
 #talleres h4{
   font-size: 30px;
+  color: #fff;
 }
 #talleres p {
   text-align: center;
@@ -173,51 +176,51 @@ color: #000;
 
 /* lugar y fecha */
 
-.contenedor-trabajar {
+.contenedor-fecha {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-#lugar .item {
+#lugar-fecha .item {
   width: 28%;
   text-align: center;
 }
 
-#lugar ul li {
+#lugar-fecha ul li {
   list-style: none;
 }
 
-#lugar ul li:nth-child(2) {
+#lugar-fecha ul li:nth-child(1) {
   font-weight: bold;
   font-size: 19px;
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
-#lugar ul li:nth-child(3) {
+#lugar-fecha ul li:nth-child(3) {
   line-height: 31px;
 }
 
 /* Costo*/
 
 #que-esperas {
-  background: linear-gradient(rgba(66, 66, 66), rgba(66, 66, 66));
+  background: linear-gradient(rgb(109, 109, 109), rgba(66, 66, 66));
   text-align: center;
   padding: 50px 0;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
-#que-esperas h3 {
-  font-size: 23px;
+#que-esperas h3, span {
+  font-size: 28px;
   color: #fff;
 }
 #que-esperas a{
-  width: 30px;
-  color: #000;
+  width: 50px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
-  background: #fff;
-  border: 1px solid #353535;
 }
 
 footer {
@@ -249,21 +252,15 @@ footer p {
   margin-top: 40px;
 }
 
-#whatsapp {
-  position: fixed;
-  top: 80%;
-  right: 1%;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-#mis-trabajos, #sobre-mi, #por-que-trabajar, #blog, #contacto {
+#talleres, #tema, #lugar-fecha, #contacto {
   padding: 90px 0;
 }
 
-#servicios {
+#speakers {
   padding: 70px 0;
 }
 
@@ -307,23 +304,23 @@ h2 {
   font-size: 19px;
 }
 
-#sobre-mi .contenedor-sobremi {
+#tema .contenedor-tema {
     flex-direction: column;
 }
 
-#sobre-mi img {
+#tema img {
   width: 100%;
 }
 
-#sobre-mi .texto {
+#tema .texto {
     width: 100%;
 }
 
-.contenedor-servicios {
+.contenedor-tema {
     flex-direction: column;
 }
 
-.servicio {
+.tema {
   width: 82%;
   padding: 34px 30px 69px 30px;
 }
@@ -336,27 +333,17 @@ h3 {
   font-size: 43px;
 }
 
-.contenedor-trabajar {
+.contenedor-fecha {
     flex-direction: column;
 }
 
-#por-que-trabajar .item {
+#lugar-fecha .item {
     width: 100%;
 }
 
 .item ul {
     padding: 0;
 }
-
-#blog .contenedor-publicaciones {
-    flex-direction: column;
-}
-
-#blog .publicacion {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
 #contacto form {
     width: 100%;
     flex-direction: column;
@@ -374,11 +361,11 @@ footer img {
 
 @media (min-width: 300px) and (max-width:800px) {
   header {
-    height: 40vh;
+    height: 30vh;
   }
 
   .servicio {
-    width: 57%;
+    width: 60%;
     padding: 34px 30px 69px 30px;
     margin: auto;
     margin-bottom: 45px;
