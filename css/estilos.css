@@ -26,8 +26,10 @@ header ul li {
 }
 
 header {
-  background: url(../img/thinkinn.jpg);
+  background: url(../img/thinie.jpg);
   height: 100vh;
+  width: auto;
+  padding: 15px;
   background-size: cover;
 }
 
@@ -181,10 +183,7 @@ color: #000;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#lugar-fecha .contenedor h3{
-  color: #000;
-  font-weight: bold;
-}
+
 #lugar-fecha .item {
   width: 28%;
   text-align: center;
@@ -362,9 +361,9 @@ footer img {
 
 }
 
-@media (min-width: 400px) and (max-width:800px) {
+@media (min-width: 300px) and (max-width:800px) {
   header {
-    height: 40vh;
+    height: 30vh;
   }
 
   .servicio {
