@@ -29,7 +29,7 @@ header {
   background: url(../img/thinie.jpg);
   height: 100vh;
   width: auto;
-  padding: 15px;
+  padding: 12px;
   background-size: cover;
 }
 
@@ -183,7 +183,9 @@ color: #000;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+#lugar-fecha .contenedor h3{
+  color: #000;
+}
 #lugar-fecha .item {
   width: 28%;
   text-align: center;
