@@ -21,16 +21,16 @@ header ul li {
 
 .contenedor {
   max-width: 1280px;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
 header {
-  background: url(../img/thinie.jpg);
-  height: 100vh;
+  background: url(../img/thanii.jpg);
+  height: 85vh;
   width: auto;
-  padding: 12px;
   background-size: cover;
+  padding: 5px;
 }
 
 #contenedor-titulo-flex {
@@ -65,8 +65,35 @@ header .menu .contenedor{
 nav ul li a {
   color: rgb(5, 5, 5);
 }
+.contenedor-mision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.mision .contenedor-mision li{
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mision .item {
+  width: 38%;
+  text-align: center;
+}
 
+.mision ul li {
+  list-style: none;
+}
 
+.mision ul li:nth-child(1) {
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.mision ul li:nth-child(3) {
+  line-height: 31px;
+}
 
 /* Tema */
 
@@ -92,7 +119,8 @@ h3 {
   text-align: center;
 }
 #tema .texto {
-  width: 42%;
+  width: 32%;
+  text-align: center;
 }
 
 /* speakers */
@@ -215,13 +243,13 @@ color: #000;
   margin-top: 20px;
 }
 
-#que-esperas h3, span {
+#que-esperas span {
   font-size: 28px;
   color: #fff;
 }
 #que-esperas a{
   width: 50px;
-  font-size: 18px;
+  font-size: 25px;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -336,7 +364,15 @@ h2 {
 h3 {
   font-size: 43px;
 }
-
+.contenedor-mision{
+  flex-direction: column;
+}
+.mision .item{
+  width: 100%;
+}
+.item ul{
+  padding: 0;
+}
 .contenedor-fecha {
     flex-direction: column;
 }
