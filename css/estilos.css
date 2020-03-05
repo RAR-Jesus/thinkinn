@@ -162,12 +162,13 @@ h3 {
 }
 .servicio h4 span{
   font-size: 12px;
-  color: #1179f0;
+  color: #508dc7;
 }
 
 .servicio p {
   margin-bottom: 20px;
-  height: 194px;
+  height: 190px;
+  text-align: justify;
 }
 
 .contenedor-servicios .violeta {
